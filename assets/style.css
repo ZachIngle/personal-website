@@ -1,0 +1,100 @@
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/roboto-slab-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/roboto-slab-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/roboto-slab-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/roboto-slab-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/roboto-slab-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/roboto-slab-v23-latin-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-mono-regular - latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/roboto-mono-v21-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/roboto-mono-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/roboto-mono-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/roboto-mono-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/roboto-mono-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/roboto-mono-v21-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+
+body {
+  background: #23abf1;
+  color: #001728;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto Slab', Verdana, sans-serif;
+  font-size: 20px;
+}
+
+main {
+  width: 80%;
+  height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: 'Roboto Mono', Courier, monospace;
+  font-weight: 600;
+}
+
+.icon-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon-link {
+  text-decoration: none;
+}
+
+.icon-link img {
+  height: 50px;
+  width: 50px;
+
+  color: 'white';
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  border-radius: 99px;
+}
+
+#background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
